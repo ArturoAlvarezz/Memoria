@@ -1,0 +1,44 @@
+{
+    "appliance_id": "e6f32bcd-a8e9-47f5-921c-d3b0e6a42ef3",
+    "name": "Ubuntu Server 24.04 x86_64",
+    "category": "guest",
+    "description": "Ubuntu Server 24.04 LTS (Noble Numbat) for x86_64 architecture, optimized for GNS3 environments.",
+    "vendor_name": "Canonical Ltd.",
+    "vendor_url": "https://ubuntu.com/",
+    "product_name": "Ubuntu Server 24.04 LTS",
+    "product_url": "https://ubuntu.com/download/server",
+    "registry_version": 1,
+    "status": "stable",
+    "availability": "free",
+    "maintainer": "Arturo Alvarez",
+    "maintainer_email": "arturoalvareezz@gmail.com",
+    "usage": "Por defecto, el usuario es 'ubuntu' y la contraseña 'ubuntu'. La imagen utiliza parámetros optimizados para QEMU con arquitectura x86_64.",
+    "symbol": "linux_guest.svg",
+    "qemu": {
+        "adapter_type": "virtio-net-pci",
+        "adapters": 1,
+        "ram": 2048,
+        "hda_disk_interface": "virtio",
+        "arch": "x86_64",
+        "console_type": "vnc",
+        "boot_priority": "c",
+        "kvm": "allow"
+    },
+    "images": [
+        {
+            "filename": "UbuntuServer_24.04_VM_LinuxVMImages.COM.vmdk",
+            "version": "24.04-LTS",
+            "md5sum": "e1ecf418c7931cbdd199ed72f9844ece",
+            "filesize": 2000000000,
+            "download_url": "https://releases.ubuntu.com/24.04/"
+        }
+    ],
+    "versions": [
+        {
+            "name": "24.04-LTS",
+            "images": {
+                "hda_disk_image": "UbuntuServer_24.04_VM_LinuxVMImages.COM.vmdk"
+            }
+        }
+    ]
+}
